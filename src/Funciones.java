@@ -5,6 +5,7 @@ import java.sql.Statement;
 public class Funciones {
 	private Connection conexion;
 
+	// Inserta los datos introducidos en la base de datos
 	public void registrarDatos(String usuario, String pass) {
 
 		try {
@@ -16,6 +17,7 @@ public class Funciones {
 			e.printStackTrace();
 		}
 	}
+	// Borra los datos de la base de datos con los datos introducidos
 	public void borrarDatos(String usuario, String pass) {
 
 		try {
@@ -27,6 +29,8 @@ public class Funciones {
 			e.printStackTrace();
 		}
 	}
+	
+	// Actualiza los datos de la base de datos con los datos introducidos
 	public void actualizarDatos(String usuario, String pass) {
 
 		try {
